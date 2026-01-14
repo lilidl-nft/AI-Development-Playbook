@@ -67,5 +67,3 @@ This repository is optimized for consumption by AI models.
 - [**002: Pragmatic Strict Typing**](adr/002-pragmatic-strict-typing.md): Our stance on Mypy strictness.
 - [**003: `src/` Layout**](adr/003-src-layout.md): Why we nest code in a `src` folder.
 - [**004: Async by Default**](adr/004-async-by-default.md): When to use `async` vs `sync`.
-
-## 🚀 Usage
