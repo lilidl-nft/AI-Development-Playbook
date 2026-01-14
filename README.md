@@ -28,6 +28,14 @@ Follow these steps to ship high-quality code using these guidelines:
 8.  **Architect**: If building RAG or MCP systems, consult the [Architecture](architecture/) folder before writing code.
 9.  **Evolve**: If you need to break a rule, document the "Why" in a new [ADR](adr/).
 
+## 🤖 AI Agent Usage
+
+This repository is optimized for consumption by AI models.
+
+-   **Context Injection**: Feed `llms.txt` to your LLM to give it immediate knowledge of all our standards.
+-   **System Persona**: Use `prompts/system_prompt.md` as the system instruction for any chat-based coding assistant.
+-   **Discovery**: Autonomous agents can read `agent_manifest.json` to map the repository resources.
+
 ## 📂 Contents
 
 ### ⚙️ Enforceable Configs
