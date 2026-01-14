@@ -11,20 +11,31 @@ Follow these steps to ship high-quality code using these guidelines:
     # Requires cookiecutter (uv tool install cookiecutter)
     cookiecutter https://github.com/lilidl-nft/AI --directory templates/python-starter
     ```
-2.  **Contextualize AI**: Copy `guides/gemini_rules.md` to your project root (e.g., as `.cursorrules` or `gemini_rules.md`) so your AI assistant knows the rules.
-3.  **Configure**: Set up your environment using `.env.example` as a template. Enforce configuration via `pydantic-settings`.
-4.  **Implement**: Write code following strict [Python Best Practices](guides/python_best_practices.md) and [API Rules](guides/api_rules.md).
-5.  **Verify**: Run the quality gates before committing.
+2.  **Enforce**: Copy the standard configs to your project root to ensure quality gates are active from Day 1.
+    -   `cp configs/pyproject.toml .` (Linting/Typing rules)
+    -   `cp configs/pre-commit-config.yaml .` (Git hooks)
+    -   `mkdir -p .github/workflows && cp configs/ci.yml .github/workflows/` (CI Pipeline)
+3.  **Contextualize AI**: Copy `guides/gemini_rules.md` to your project root (e.g., as `.cursorrules` or `gemini_rules.md`) so your AI assistant knows the rules.
+4.  **Configure**: Set up your environment using `.env.example` as a template. Enforce configuration via `pydantic-settings`.
+5.  **Implement**: Write code following strict [Python Best Practices](guides/python_best_practices.md) and [API Rules](guides/api_rules.md).
+6.  **Verify**: Run the quality gates before committing.
     ```bash
     uv run pytest
     uv run ruff check
     uv run mypy .
     ```
-6.  **Review**: Check your work against the [Definition of Done](guides/testing_and_dod.md) checklist.
-7.  **Architect**: If building RAG or MCP systems, consult the [Architecture](architecture/) folder before writing code.
-8.  **Evolve**: If you need to break a rule, document the "Why" in a new [ADR](adr/).
+7.  **Review**: Check your work against the [Definition of Done](guides/testing_and_dod.md) checklist.
+8.  **Architect**: If building RAG or MCP systems, consult the [Architecture](architecture/) folder before writing code.
+9.  **Evolve**: If you need to break a rule, document the "Why" in a new [ADR](adr/).
 
 ## 📂 Contents
+
+### ⚙️ Enforceable Configs
+*Location: `/configs`*
+- [**pyproject.toml**](configs/pyproject.toml): The "One Config to Rule Them All" for Ruff, Mypy, and Pytest.
+- [**pre-commit-config.yaml**](configs/pre-commit-config.yaml): Standard git hooks to fix issues before they are committed.
+- [**ci.yml**](configs/ci.yml): GitHub Actions workflow for automated testing and linting.
+- [**dependabot.yml**](configs/dependabot.yml): Automated dependency updates.
 
 ### 🏗️ Templates & Scaffolds
 *Location: `/templates`*
