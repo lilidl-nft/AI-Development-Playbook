@@ -4,18 +4,25 @@ This repository serves as a central knowledge base for coding standards, best pr
 
 ## 📂 Contents
 
-### 🏗️ Project Setup & Templates
-- [**Python Cookiecutter**](python_cookiecutter.md): Standard directory structure and technology stack (FastAPI, uv, pytest) for new Python projects.
-- [**Gemini CLI Rules**](gemini_rules.md): Operational guidelines for AI agents working within the Gemini CLI environment.
+### 🏗️ Templates & Scaffolds
+*Location: `/templates`*
+- [**Python Cookiecutter**](templates/python_cookiecutter.md): Standard directory structure and technology stack (FastAPI, uv, pytest) for new Python projects.
 
-### 🐍 Python Standards
-- [**Python Best Practices**](python_best_practices.md): Coding philosophy, style guides (PEP 8), and modern tooling recommendations (Ruff, Mypy).
-- [**Testing & Definition of Done**](testing_and_dod.md): A rigorous strategy for testing (Pyramid) and criteria for considering a task complete.
+### 📚 Development Guides
+*Location: `/guides`*
+- [**Python Best Practices**](guides/python_best_practices.md): Coding philosophy, style guides (PEP 8), and modern tooling recommendations (Ruff, Mypy).
+- [**API Design Rules**](guides/api_rules.md): Standards for building RESTful APIs, including URL structure, versioning, and security.
+- [**Testing & Definition of Done**](guides/testing_and_dod.md): A rigorous strategy for testing (Pyramid) and criteria for considering a task complete.
+- [**Gemini CLI Rules**](guides/gemini_rules.md): Operational guidelines for AI agents working within the Gemini CLI environment.
 
-### 🌐 System Architecture
-- [**API Design Rules**](api_rules.md): Standards for building RESTful APIs, including URL structure, versioning, and security.
-- [**RAG Best Practices**](rag_best_practices.md): Guidelines for building high-quality Retrieval-Augmented Generation systems.
-- [**MCP Best Practices**](mcp_best_practices.md): Design principles for Model Context Protocol servers.
+### 🏛️ Architecture & Systems
+*Location: `/architecture`*
+- [**RAG Best Practices**](architecture/rag_best_practices.md): Guidelines for building high-quality Retrieval-Augmented Generation systems.
+- [**MCP Best Practices**](architecture/mcp_best_practices.md): Design principles for Model Context Protocol servers.
+
+### ⚖️ Architectural Decision Records (ADR)
+*Location: `/adr`*
+- *(No records yet)*
 
 ## 🚀 Usage
 
