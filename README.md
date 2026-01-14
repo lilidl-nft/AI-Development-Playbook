@@ -55,4 +55,9 @@ Follow these steps to ship high-quality code using these guidelines:
 
 ### ⚖️ Architectural Decision Records (ADR)
 *Location: `/adr`*
-- *(No records yet)*
+- [**001: Use `uv`**](adr/001-use-uv-for-dependency-management.md): Why we chose `uv` over Poetry/Pip.
+- [**002: Pragmatic Strict Typing**](adr/002-pragmatic-strict-typing.md): Our stance on Mypy strictness.
+- [**003: `src/` Layout**](adr/003-src-layout.md): Why we nest code in a `src` folder.
+- [**004: Async by Default**](adr/004-async-by-default.md): When to use `async` vs `sync`.
+
+## 🚀 Usage
